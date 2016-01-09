@@ -8,6 +8,9 @@
 
 #import "Deck.h"
 #import "Card.h"
+#import "Underscore.h"
+
+#define _ Underscore
 
 @implementation Deck {
     
@@ -36,9 +39,7 @@
 }
 
 - (void) mixCards {
-    
-    
-    
+    _cards = [[NSMutableArray alloc]initWithArray:_.shuffle(_cards)];
 }
 
 @end
