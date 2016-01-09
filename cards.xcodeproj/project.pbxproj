@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218D9C1C4152A900CEC7A6 /* Deck.m */; };
 		8490CD541C172E6800E3317C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490CD531C172E6800E3317C /* Card.m */; };
 		84D03BC81C15D6CE007A9782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D03BC71C15D6CE007A9782 /* main.m */; };
 		84D03BCB1C15D6CE007A9782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D03BCA1C15D6CE007A9782 /* AppDelegate.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A218D9B1C4152A900CEC7A6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		5A218D9C1C4152A900CEC7A6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		8490CD521C172E6800E3317C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		8490CD531C172E6800E3317C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		84D03BC31C15D6CE007A9782 /* cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,8 @@
 			children = (
 				8490CD521C172E6800E3317C /* Card.h */,
 				8490CD531C172E6800E3317C /* Card.m */,
+				5A218D9B1C4152A900CEC7A6 /* Deck.h */,
+				5A218D9C1C4152A900CEC7A6 /* Deck.m */,
 				84D03BCC1C15D6CE007A9782 /* ViewController.h */,
 				84D03BCD1C15D6CE007A9782 /* ViewController.m */,
 				84D03BCF1C15D6CE007A9782 /* Main.storyboard */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */,
 				84D03BCE1C15D6CE007A9782 /* ViewController.m in Sources */,
 				84D03BCB1C15D6CE007A9782 /* AppDelegate.m in Sources */,
 				84D03BC81C15D6CE007A9782 /* main.m in Sources */,

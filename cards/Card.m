@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void) showCard {
+- (void) show {
     
     NSLog(@"The card is %@ %@", _suite, _value);
     

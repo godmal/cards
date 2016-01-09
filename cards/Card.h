@@ -12,6 +12,6 @@
 
 
 - (id) initWithValue: (NSString*)value andSuite: (NSString*)suite;
-- (void) showCard;
+- (void) show;
 
 @end

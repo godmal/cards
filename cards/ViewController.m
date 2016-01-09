@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Card.h"
+#import "Deck.h"
 
 @interface ViewController ()
 
@@ -18,23 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    NSArray* arrayOfSuites = [NSArray arrayWithObjects:@"chervi", @"bubi", @"kresti", @"piki", nil];
-    NSArray* arrayOfValues = [NSArray arrayWithObjects:@"6", @"7", @"8", @"9", @"10", @"knave", @"queen", @"king", @"ace", nil];
-    NSMutableArray *cards = [[NSMutableArray alloc] init];
     
-    for (NSString* firstString in arrayOfSuites) {
-        for (NSString* secondString in arrayOfValues) {
-            
-            Card* card = [[Card alloc] initWithValue:firstString andSuite:secondString];
-            [cards addObject:card];
-            
-        }
-    }
-    for (Card* card in cards) {
-        [card showCard];
-    }
+    NSArray* suites = [NSArray arrayWithObjects:@"chervi", @"bubi", @"kresti", @"piki", nil];
+    NSArray* values = [NSArray arrayWithObjects:@"6", @"7", @"8", @"9", @"10", @"knave", @"queen", @"king", @"ace", nil];
     
+    Deck* deck = [[Deck alloc] initWithValues:values andSuites:suites];
+    [deck show];
 }
 
 
