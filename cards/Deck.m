@@ -42,4 +42,10 @@
     _cards = [[NSMutableArray alloc]initWithArray:_.shuffle(_cards)];
 }
 
+- (Card*) getFirstCard {
+    Card* firstCard = [_cards objectAtIndex:0];
+    [_cards removeObjectAtIndex:0];
+    return firstCard;
+}
+
 @end

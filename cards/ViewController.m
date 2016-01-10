@@ -25,9 +25,11 @@
     Deck* deck = [[Deck alloc] initWithValues:values andSuites:suites];
     [deck show];
     [deck mixCards];
-    NSLog(@"----------------------------------------------------------------------------");
-    NSLog(@"----------------------------AFTER MIXING------------------------------------");
-    NSLog(@"----------------------------------------------------------------------------");
+    NSLog(@"AFTER MIXING");
+    [deck show];
+    NSLog(@"First card is");
+    [[deck getFirstCard] show];
+    NSLog(@"AFTER REMOVING FIRST CARD:");
     [deck show];
 }
 

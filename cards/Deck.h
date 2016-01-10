@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 
 @interface Deck : NSObject
 
 - (id) initWithValues: (NSArray*)values andSuites: (NSArray*)suites;
 - (void) show;
 - (void) mixCards;
+- (Card*) getFirstCard;
 
 
 @end
