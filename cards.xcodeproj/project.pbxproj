@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		013C2D8C9358AF9D04E9F267 /* libPods-cards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDED98613126FAAC975B2EA /* libPods-cards.a */; };
 		5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218D9C1C4152A900CEC7A6 /* Deck.m */; };
+		5AB8E5941C465A280062688E /* PlayerDurak.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E5931C465A280062688E /* PlayerDurak.m */; };
 		5AC377651C464C0D00C8042E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC377641C464C0D00C8042E /* Player.m */; };
-		5AC377681C464C2800C8042E /* PlayerDurak.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC377671C464C2800C8042E /* PlayerDurak.m */; };
 		8490CD541C172E6800E3317C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490CD531C172E6800E3317C /* Card.m */; };
 		84D03BC81C15D6CE007A9782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D03BC71C15D6CE007A9782 /* main.m */; };
 		84D03BCB1C15D6CE007A9782 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D03BCA1C15D6CE007A9782 /* AppDelegate.m */; };
@@ -24,10 +24,10 @@
 		0199681021BB000FAE6670E4 /* Pods-cards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cards.release.xcconfig"; path = "Pods/Target Support Files/Pods-cards/Pods-cards.release.xcconfig"; sourceTree = "<group>"; };
 		5A218D9B1C4152A900CEC7A6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		5A218D9C1C4152A900CEC7A6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		5AB8E5921C465A280062688E /* PlayerDurak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerDurak.h; path = Durak/PlayerDurak.h; sourceTree = "<group>"; };
+		5AB8E5931C465A280062688E /* PlayerDurak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerDurak.m; path = Durak/PlayerDurak.m; sourceTree = "<group>"; };
 		5AC377631C464C0D00C8042E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		5AC377641C464C0D00C8042E /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		5AC377661C464C2800C8042E /* PlayerDurak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDurak.h; sourceTree = "<group>"; };
-		5AC377671C464C2800C8042E /* PlayerDurak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDurak.m; sourceTree = "<group>"; };
 		6D0A3F04543E39D00C1C9859 /* Pods-cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cards/Pods-cards.debug.xcconfig"; sourceTree = "<group>"; };
 		8490CD521C172E6800E3317C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		8490CD531C172E6800E3317C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
@@ -56,11 +56,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5AC377621C464BAA00C8042E /* Durak */ = {
+		5AB8E5951C465A2D0062688E /* Durak */ = {
 			isa = PBXGroup;
 			children = (
-				5AC377661C464C2800C8042E /* PlayerDurak.h */,
-				5AC377671C464C2800C8042E /* PlayerDurak.m */,
+				5AB8E5921C465A280062688E /* PlayerDurak.h */,
+				5AB8E5931C465A280062688E /* PlayerDurak.m */,
 			);
 			name = Durak;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 		84D03BC51C15D6CE007A9782 /* cards */ = {
 			isa = PBXGroup;
 			children = (
-				5AC377621C464BAA00C8042E /* Durak */,
+				5AB8E5951C465A2D0062688E /* Durak */,
 				8490CD521C172E6800E3317C /* Card.h */,
 				8490CD531C172E6800E3317C /* Card.m */,
 				5A218D9B1C4152A900CEC7A6 /* Deck.h */,
@@ -96,9 +96,6 @@
 				84D03BCC1C15D6CE007A9782 /* ViewController.h */,
 				84D03BCD1C15D6CE007A9782 /* ViewController.m */,
 				84D03BCF1C15D6CE007A9782 /* Main.storyboard */,
-				84D03BD21C15D6CE007A9782 /* Assets.xcassets */,
-				84D03BD41C15D6CE007A9782 /* LaunchScreen.storyboard */,
-				84D03BD71C15D6CE007A9782 /* Info.plist */,
 				84D03BC61C15D6CE007A9782 /* Supporting Files */,
 			);
 			path = cards;
@@ -107,6 +104,9 @@
 		84D03BC61C15D6CE007A9782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84D03BD21C15D6CE007A9782 /* Assets.xcassets */,
+				84D03BD41C15D6CE007A9782 /* LaunchScreen.storyboard */,
+				84D03BD71C15D6CE007A9782 /* Info.plist */,
 				84D03BC91C15D6CE007A9782 /* AppDelegate.h */,
 				84D03BCA1C15D6CE007A9782 /* AppDelegate.m */,
 				84D03BC71C15D6CE007A9782 /* main.m */,
@@ -254,7 +254,7 @@
 			files = (
 				5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */,
 				84D03BCE1C15D6CE007A9782 /* ViewController.m in Sources */,
-				5AC377681C464C2800C8042E /* PlayerDurak.m in Sources */,
+				5AB8E5941C465A280062688E /* PlayerDurak.m in Sources */,
 				84D03BCB1C15D6CE007A9782 /* AppDelegate.m in Sources */,
 				84D03BC81C15D6CE007A9782 /* main.m in Sources */,
 				5AC377651C464C0D00C8042E /* Player.m in Sources */,
