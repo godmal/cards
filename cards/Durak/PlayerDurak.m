@@ -7,7 +7,12 @@
 //
 
 #import "PlayerDurak.h"
+#import "Card.h"
 
-@implementation PlayerDurak
+@implementation PlayerDurak {
+    
+    Card* cards;
+    
+}
 
 @end
