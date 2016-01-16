@@ -19,10 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray* suites = [NSArray arrayWithObjects:@"chervi", @"bubi", @"kresti", @"piki", nil];
     NSArray* values = [NSArray arrayWithObjects:@"6", @"7", @"8", @"9", @"10", @"knave", @"queen", @"king", @"ace", nil];
     
-    Deck* deck = [[Deck alloc] initWithValues:values andSuites:suites];
+    Deck* deck = [[Deck alloc] initWithValues:values];
     [deck show];
     [deck mixCards];
     NSLog(@"AFTER MIXING");
@@ -31,6 +30,8 @@
     [[deck getFirstCard] show];
     NSLog(@"AFTER REMOVING FIRST CARD:");
     [deck show];
+    
+    
 }
 
 

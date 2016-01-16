@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Card.h"
 
+
 @interface Deck : NSObject
 
-- (id) initWithValues: (NSArray*)values andSuites: (NSArray*)suites;
+- (id) initWithValues: (NSArray*)values;
 - (void) show;
 - (void) mixCards;
 - (Card*) getFirstCard;
