@@ -7,17 +7,17 @@
 //
 
 #import "Card.h"
-
+#import "Suit.h"
 @implementation Card {
     
-    NSString* _suite;
+    Suit _suite;
     NSString* _value;
     NSString* _strength;
     
 }
 
 
-- (id) initWithValue:(NSString *)value andSuite:(NSString *)suite {
+- (id) initWithValue:(NSString *)value andSuite:(Suit)suite {
     
     self = [super init]; 
     if (self) {
@@ -32,7 +32,7 @@
 
 - (void) show {
     
-    NSLog(@"The card is %@ %@", _suite, _value);
+    NSLog(@"The card is %ld %@", (long)_suite, _value);
     
 }
 

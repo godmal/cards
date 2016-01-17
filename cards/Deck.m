@@ -9,7 +9,7 @@
 #import "Deck.h"
 #import "Card.h"
 #import "Underscore.h"
-#import "Suits.h"
+#import "Suit.h"
 
 #define _ Underscore
 
@@ -24,8 +24,8 @@
     if (self) {
         _cards = [[NSMutableArray alloc]init];
         for (NSString* value in values) {
-            for (NSString* suite in _.values(Suits.get)){
-                Card* card = [[Card alloc] initWithValue:value andSuite:suite];
+            for (int suit=0; suit<SUIT_SIZE; suit++){
+                Card* card = [[Card alloc] initWithValue:value andSuite:suit];
                 [_cards addObject: card];
             }
         }

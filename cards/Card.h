@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Suit.h"
 @interface Card : NSObject
 
 
-- (id) initWithValue: (NSString*)value andSuite: (NSString*)suite;
+- (id) initWithValue: (NSString*)value andSuite: (Suit)suite;
 - (void) show;
+
 
 @end
