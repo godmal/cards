@@ -11,8 +11,8 @@
 @interface Card : NSObject
 
 
-- (id) initWithValue: (NSString*)value andSuite: (Suit)suite;
-- (void) show;
+-(id) initWithValue: (NSString*)value andSuite: (Suit)suite;
+-(void) show;
 
 
 @end

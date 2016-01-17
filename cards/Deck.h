@@ -11,11 +11,12 @@
 
 
 @interface Deck : NSObject
+@property (strong, nonatomic) NSMutableArray* cards;
 
-- (id) initWithValues: (NSArray*)values;
-- (void) show;
-- (void) mixCards;
-- (Card*) getFirstCard;
+-(id) initWithValues: (NSArray*)values;
+-(void) show;
+-(void) mixCards;
+-(Card*) getFirstCard;
 
 
 @end

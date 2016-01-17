@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Deck.h"
+#import "Game.h"
+#import "GameConsoleView.h"
 
 @interface ViewController ()
 
@@ -16,28 +18,17 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
-    
     NSArray* values = [NSArray arrayWithObjects:@"6", @"7", @"8", @"9", @"10", @"knave", @"queen", @"king", @"ace", nil];
     
-    Deck* deck = [[Deck alloc] initWithValues:values];
-    [deck show];
-    [deck mixCards];
-    NSLog(@"AFTER MIXING");
-    [deck show];
-    NSLog(@"First card is");
-    [[deck getFirstCard] show];
-    NSLog(@"AFTER REMOVING FIRST CARD:");
-    [deck show];
-    
+    Game* game = [[Game alloc] initDeckWithValues:values];
+    GameConsoleView* view = [[GameConsoleView alloc] initWithModel:game];
+    [view showDeck];
     
 }
 
-
-
-
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

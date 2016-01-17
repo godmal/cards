@@ -13,20 +13,18 @@
 
 #define _ Underscore
 
-@implementation Deck {
+@implementation Deck
     
-    NSMutableArray* _cards;
-    
-}
+@synthesize cards;
 
 -(id) initWithValues:(NSArray *)values {
     self = [super init];
     if (self) {
-        _cards = [[NSMutableArray alloc]init];
+        cards = [[NSMutableArray alloc]init];
         for (NSString* value in values) {
             for (int suit=0; suit<SUIT_SIZE; suit++){
                 Card* card = [[Card alloc] initWithValue:value andSuite:suit];
-                [_cards addObject: card];
+                [cards addObject: card];
             }
         }
     }
@@ -34,18 +32,18 @@
 }
 
 -(void) show {
-    for (Card* card in _cards) {
+    for (Card* card in cards) {
         [card show];
     }
 }
 
-- (void) mixCards {
-    _cards = [[NSMutableArray alloc]initWithArray:_.shuffle(_cards)];
+-(void) mixCards {
+    cards = [[NSMutableArray alloc]initWithArray:_.shuffle(cards)];
 }
 
-- (Card*) getFirstCard {
-    Card* firstCard = [_cards objectAtIndex:0];
-    [_cards removeObjectAtIndex:0];
+-(Card*) getFirstCard {
+    Card* firstCard = [cards objectAtIndex:0];
+    [cards removeObjectAtIndex:0];
     return firstCard;
 }
 

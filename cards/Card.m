@@ -17,7 +17,7 @@
 }
 
 
-- (id) initWithValue:(NSString *)value andSuite:(Suit)suite {
+-(id) initWithValue:(NSString *)value andSuite:(Suit)suite {
     
     self = [super init]; 
     if (self) {
@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void) show {
+-(void) show {
     
     NSLog(@"The card is %ld %@", (long)_suite, _value);
     

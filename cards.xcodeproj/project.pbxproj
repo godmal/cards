@@ -11,6 +11,8 @@
 		5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218D9C1C4152A900CEC7A6 /* Deck.m */; };
 		5AB8E5941C465A280062688E /* PlayerDurak.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E5931C465A280062688E /* PlayerDurak.m */; };
 		5AB8E5A81C4AF7210062688E /* GameDurak.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E5A71C4AF7210062688E /* GameDurak.m */; };
+		5AB8E5AB1C4C37ED0062688E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E5AA1C4C37ED0062688E /* Game.m */; };
+		5AB8E5AE1C4C3ABB0062688E /* GameConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E5AD1C4C3ABB0062688E /* GameConsoleView.m */; };
 		5AC377651C464C0D00C8042E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC377641C464C0D00C8042E /* Player.m */; };
 		8490CD541C172E6800E3317C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490CD531C172E6800E3317C /* Card.m */; };
 		84D03BC81C15D6CE007A9782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D03BC71C15D6CE007A9782 /* main.m */; };
@@ -30,6 +32,10 @@
 		5AB8E5A51C4AF5D60062688E /* Suit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suit.h; sourceTree = "<group>"; };
 		5AB8E5A61C4AF7210062688E /* GameDurak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDurak.h; sourceTree = "<group>"; };
 		5AB8E5A71C4AF7210062688E /* GameDurak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDurak.m; sourceTree = "<group>"; };
+		5AB8E5A91C4C37ED0062688E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		5AB8E5AA1C4C37ED0062688E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		5AB8E5AC1C4C3ABB0062688E /* GameConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConsoleView.h; sourceTree = "<group>"; };
+		5AB8E5AD1C4C3ABB0062688E /* GameConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameConsoleView.m; sourceTree = "<group>"; };
 		5AC377631C464C0D00C8042E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		5AC377641C464C0D00C8042E /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		6D0A3F04543E39D00C1C9859 /* Pods-cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cards/Pods-cards.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,8 +107,12 @@
 				5AC377641C464C0D00C8042E /* Player.m */,
 				84D03BCC1C15D6CE007A9782 /* ViewController.h */,
 				84D03BCD1C15D6CE007A9782 /* ViewController.m */,
-				5AB8E5A51C4AF5D60062688E /* Suit.h */,
+				5AB8E5A91C4C37ED0062688E /* Game.h */,
+				5AB8E5AA1C4C37ED0062688E /* Game.m */,
+				5AB8E5AC1C4C3ABB0062688E /* GameConsoleView.h */,
+				5AB8E5AD1C4C3ABB0062688E /* GameConsoleView.m */,
 				84D03BCF1C15D6CE007A9782 /* Main.storyboard */,
+				5AB8E5A51C4AF5D60062688E /* Suit.h */,
 				84D03BC61C15D6CE007A9782 /* Supporting Files */,
 			);
 			path = cards;
@@ -259,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB8E5AE1C4C3ABB0062688E /* GameConsoleView.m in Sources */,
+				5AB8E5AB1C4C37ED0062688E /* Game.m in Sources */,
 				5A218D9D1C4152A900CEC7A6 /* Deck.m in Sources */,
 				84D03BCE1C15D6CE007A9782 /* ViewController.m in Sources */,
 				5AB8E5941C465A280062688E /* PlayerDurak.m in Sources */,
