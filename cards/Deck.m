@@ -31,11 +31,6 @@
     return self;
 }
 
--(void) show {
-    for (Card* card in cards) {
-        [card show];
-    }
-}
 
 -(void) mixCards {
     cards = [[NSMutableArray alloc]initWithArray:_.shuffle(cards)];

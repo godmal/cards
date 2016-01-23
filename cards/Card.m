@@ -10,8 +10,7 @@
 #import "Suit.h"
 @implementation Card {
     
-    Suit _suite;
-    NSString* _value;
+    
     NSString* _strength;
     
 }
@@ -30,11 +29,7 @@
     return self;
 }
 
--(void) show {
-    
-    NSLog(@"The card is %ld %@", (long)_suite, _value);
-    
-}
+
 
 
 @end

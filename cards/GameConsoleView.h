@@ -13,5 +13,6 @@
 
 -(id) initWithModel:(Game*) game;
 -(void) showDeck;
+-(void) showCard:(Card*)card;
 
 @end

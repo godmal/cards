@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Suit.h"
-@interface Card : NSObject
 
+@interface Card : NSObject
+@property (assign, nonatomic) Suit suite;
+@property (strong, nonatomic) NSString* value;
 
 -(id) initWithValue: (NSString*)value andSuite: (Suit)suite;
--(void) show;
+
 
 
 @end

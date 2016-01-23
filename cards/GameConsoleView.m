@@ -13,20 +13,31 @@
 
 @implementation GameConsoleView {
     Game* _game;
-
+    NSArray* _suitsLabel;
 }
 
 -(id) initWithModel:(Game *)game {
     self = [super init];
     if (self) {
         _game = game;
+        _suitsLabel = @[
+            @"Spades",
+            @"Hearts",
+            @"Diamonds",
+            @"Clubs"
+        ];
     }
     return self;
 }
 -(void) showDeck {
     for (Card* card in [_game getCards]) {
-        [card show];
+        [self showCard:card];
     }
+}
+
+-(void) showCard:(Card*)card {
+    NSString* suitLabel = [_suitsLabel objectAtIndex:card.suite];
+    NSLog(@"Card is %@ %@", suitLabel, card.value);
 }
 
 @end
